@@ -1,0 +1,123 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: no-repeat conic-gradient(#d9d9d9, #404040);
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.card {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+.card p {
+  text-align: center;
+  color: #d9d9d9;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.texto {
+  position: relative;
+  display: inline-block;
+  color: #d9d9d9;
+  font-size: 1rem;
+  margin: 8px;
+  margin-left: 10px;
+}
+.texto::before,
+.texto::after {
+  content: "";
+  position: absolute;
+  top: 0.65em;
+  width: 7em;
+  height: 0.05em;
+  background-color: #d9d9d9;
+  left: -0.6em;
+}
+.texto::after {
+  left: initial;
+  right: -0.6em;
+}
+
+.card ul li {
+  list-style: none;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #d9d9d9;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+}
+
+.redes:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  padding: 10px;
+  color: #d9d9d9;
+}
+
+.user-email {
+  position: relative;
+}
+.user-email input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: transparent;
+}
+.user-email label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #d9d9d9;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.btn {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #d9d9d9;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
